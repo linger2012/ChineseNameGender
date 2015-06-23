@@ -14,6 +14,8 @@ public class Trainer {
 		//model.add("刘恋", "male");
 		//model.add("完颜洪烈", "female");
 		
+		//可优化的地方,调整男女人数比例一致
+		
 		Reader reader = new MysqlReader(1,3000000);//第1到第1+2000000条数据库记录
 		while(reader.hasNext())
 		{

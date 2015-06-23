@@ -2,8 +2,10 @@ package model;
 
 import java.io.IOException;
 
-import utils.Serializer;
 import nlp.MaximumMatching;
+import utils.Serializer;
+
+
 
 public class Predictor {
 
@@ -11,18 +13,7 @@ public class Predictor {
 		// TODO Auto-generated method stub
 		MaximumMatching mm = new MaximumMatching("res/dict.txt");
 		Model model = (Model) Serializer.reSerializeObject("res/model.obj");
-		//System.out.println(model.predict(mm.parseName("张敬轩")));
-		//System.out.println(model.predict(mm.parseName("刘德华")));
-		
-		//System.out.println(model.predict(mm.parseName("杨幂")));
-		System.out.println(model.predict(mm.parseName("范玮琪")));
-		System.out.println(model.predict(mm.parseName("萧亚轩")));
-		//System.out.println(model.predict(mm.parseName("范冰冰")));
-		System.out.println(model.predict(mm.parseName("汪东城")));
-		System.out.println(model.predict(mm.parseName("陈小宾")));
-		System.out.println(model.predict(mm.parseName("唐焉")));
-		System.out.println(model.predict(mm.parseName("王语嫣")));
-		System.out.println(model.predict(mm.parseName("谢霆锋")));
+
 		
 		System.out.println(model.predict(mm.parseName("完颜康")));
 		System.out.println(model.predict(mm.parseName("杨康")));
@@ -68,12 +59,34 @@ public class Predictor {
 		System.out.println(model.predict(mm.parseName("洪宁")));
 		System.out.println(model.predict(mm.parseName("高忠胜")));
 		System.out.println(model.predict(mm.parseName("侯志贞")));
-		
+		System.out.println(model.predict(mm.parseName("杨娜")));
 		/*
 		System.out.println(model.predict(mm.parseName("欧阳启民")));
 		System.out.println(model.predict(mm.parseName("林坚雄")));
 		System.out.println(model.predict(mm.parseName("张云雷")));
 		*/
+		
+		System.out.println(model.predict(mm.parseName("张敬轩")));
+		System.out.println(model.predict(mm.parseName("刘德华")));
+		
+		System.out.println(model.predict(mm.parseName("杨幂")));
+		System.out.println(model.predict(mm.parseName("范玮琪")));
+		System.out.println(model.predict(mm.parseName("萧亚轩")));
+		System.out.println(model.predict(mm.parseName("范冰冰")));
+		System.out.println(model.predict(mm.parseName("汪东城")));
+		System.out.println(model.predict(mm.parseName("陈小宾")));
+		System.out.println(model.predict(mm.parseName("唐焉")));
+		System.out.println(model.predict(mm.parseName("王语嫣")));
+		System.out.println(model.predict(mm.parseName("谢霆锋")));
+		System.out.println(model.predict(mm.parseName("刘亦菲")));
+		System.out.println(model.predict(mm.parseName("安以轩")));
+		System.out.println(model.predict(mm.parseName("苍井空")));
+		System.out.println(model.predict(mm.parseName("邓紫棋")));
+		System.out.println(model.predict(mm.parseName("杨颖")));
+		System.out.println(model.predict(mm.parseName("赵雅芝")));
+		System.out.println(model.predict(mm.parseName("张馨予")));
+		System.out.println(model.predict(mm.parseName("古力娜扎")));
+		System.out.println(model.predict(mm.parseName("林心如")));
 	}
 
 }
